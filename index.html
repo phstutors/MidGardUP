@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/304c41c7f8.js" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Rubik:wght@400;800&display=swap');
+a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    }
+    img.logo{
+  border-radius: 50%;
+}
+footer{
+position: relative;
+top: 200px;
+}
+.buttonVip{
+padding: 15px 35px 15px 30px;
+position: relative;
+width: 100px;
+top: 190px;
+left: 440px;
+border:3px solid #fff;
+border-radius: 15px;
+}
+.redeSocial{
+padding: 15px 35px 15px 30px;
+position: relative;
+width: 100px;
+top: 190px;
+left: 640px;
+border:3px solid #8B0000;
+border-radius: 15px;
+}
+.download{
+padding: 0;
+position: relative;
+width: 00px;
+opacity: 0;
+}
+.divitexto{
+width:900px;
+position: relative;
+left: 110px;
+}
+.img1{
+width: 45%;
+height: 240px;
+position: relative;
+top: 25px;
+left: 240px;
+}
+.img2{
+width: 0%;
+}
+#titulonav{
+          font-family: 'Rubik', sans-serif;
+          color: #fff;
+        }
+.texto1{
+font-family: 'Rubik', sans-serif;
+position: relative;
+top: 50px;
+text-align: justify;
+letter-spacing: 0.080rem;
+}
+.texto2{
+font-family: 'Rubik', sans-serif;
+position: relative;
+top: 5px;
+text-align: justify;
+letter-spacing: 0.080rem;
+}
+body{
+  background-color: black;
+  color: white;
+  height: 300px;
+}
+.buttonVip:hover{
+  border: 0px solid;
+  color: white;
+  text-decoration: none;
+}
+.redeSocial:hover{
+  border: 0px solid;
+  color: white;
+  text-decoration: none;
+}
+.download:hover{
+  border: 0px solid;
+  color: white;
+  text-decoration: none;
+}
+.navbar2 {
+position: fixed;
+right: 0;
+top: 150px;
+z-index: 333;
+text-decoration: none;
+}
+
+.navbar2 ul li {
+text-align: right;
+margin-bottom: 60px;
+text-decoration: none;
+}
+
+.navbar2 ul li a {
+color: #Fff;
+font-size: 1rem;
+text-transform: uppercase;
+letter-spacing: 0.2rem;
+text-decoration: none;
+}
+#logo7{
+  position: relative;
+  top:7px;
+  margin-left: 3px;
+}
+
+.navbar2 ul li a::after {
+content: '';
+display: inline-block;
+margin: 0 15px;
+width: 12px;
+height: 12px;
+border: 2px solid #000;
+border-radius: 10px;
+background-color: #8B0000;
+transition: 0.5s ease;
+}
+
+.navbar2 ul li a:hover::after {
+background-color: #8B0000;
+border: 2px solid #8B0000;
+box-shadow: 0px 0px 5px #8B0000;
+}
+
+.navbar2 ul li a:hover {
+color: #8B0000;
+font-size: 1.1rem;
+}
+
+.navbar2 ul li.active a {
+color: #00BFFF;
+font-size: 1.1rem;
+}
+
+.navbar2 ul li.active a::after {
+background-color: #8B0000;
+border: 2px solid #8B0000;
+box-shadow: 0px 0px 5px #8B0000;
+}
+.download:hover::before{
+content:"";
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+border-radius: 15px;
+cursor: pointer;
+animation: animou 1s infinite;
+}
+@keyframes animou{
+25%{
+border-left: 5px solid #00ffff;
+}
+50%{
+border-top: 5px solid #00ffff ;
+}
+75%{
+border-right: 5px solid #00ffff;
+}
+100%{
+border-bottom: 5px solid #00ffff ;
+}
+}
+.redeSocial:hover::before{
+content:"";
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+border-radius: 15px;
+cursor: pointer;
+animation: animah 1s infinite;
+}
+@keyframes animah{
+25%{
+border-left: 5px solid #8B0000;
+}
+50%{
+border-top: 5px solid #8B0000 ;
+}
+75%{
+border-right: 5px solid #8B0000;
+}
+100%{
+border-bottom: 5px solid #8B0000 ;
+}
+}
+.buttonVip:hover::before{
+content:"";
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+border-radius: 15px;
+cursor: pointer;
+animation: anima 1s infinite;
+}
+@keyframes anima{
+25%{
+border-left: 5px solid #fff;
+}
+50%{
+border-top: 5px solid #FFF ;
+}
+75%{
+border-right: 5px solid #FFF;
+}
+100%{
+border-bottom: 5px solid #FFF ;
+}
+}
+@media  screen and (max-width: 733px) {
+    footer{
+    position: relative;
+    top: 330px;
+    }
+    .download{
+    padding: 15px 35px 15px 30px;
+    position: relative;
+    width: 100px;
+    top: 250px;
+    left: 130px;
+    opacity: 1;
+    border:3px solid #00ffff;
+    border-radius: 15px;
+    }
+    body{
+      margin: 0;
+    }
+    .navbar2{
+     opacity: 0;
+     width: 0px;
+    }
+    .buttonVip:hover{
+      border: 0px;
+      color: white;
+      text-decoration: none;
+    }
+    .buttonVip{
+    padding: 15px 35px 15px 30px;
+    position: relative;
+    width: 50px;
+    top: 100px;
+    left: 40px;
+    }
+    .redeSocial{
+    padding: 15px 35px 15px 30px;
+    position: relative;
+    width: 50px;
+    top: 100px;
+    left: 100px;
+    }
+    
+    .img1{
+    width: 90%;
+    height: 230px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    border-radius: 10%;
+    }
+    .img2{
+    width: 90%;
+    height: 375px;
+    position: relative;
+    top: 175px;
+    left: 20px;
+    border-radius: 6%;
+    }
+    .texto1{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 55px;
+    letter-spacing: 0.080rem;
+    text-align: justify;
+    margin-left: 6px;
+    margin-right: 6px;
+    }
+    .texto2{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 200px;
+    letter-spacing: 0.080rem;
+    text-align: justify;
+    margin-left: 6px;
+    margin-right: 6px;
+    }
+    .divitexto{
+    width: 100%;
+    position: relative;
+    left: 0px;
+    }
+    .nav-item{
+    display: inline-block;
+    }
+    #logo{
+    position: absolute;
+    top:45px;
+    left: 170px;
+    }
+    #logo3{
+    position: absolute;
+    top:95px;
+    left: 170px;
+    }
+    #logo4{
+    position: absolute;
+    top:145px;
+    left: 170px;
+    }
+    #logo5{
+    position: absolute;
+    top:190px;
+    left: 120px;
+    }
+    #logo7{
+      position: absolute;
+      top:240px;
+      left: 120px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 120px;
+}
+    }
+    
+    @media  screen and (max-width: 360px) {
+        footer{
+        position: relative;
+        top: 330px;
+        }
+        .download{
+        padding: 15px 35px 15px 30px;
+        position: relative;
+        width: 100px;
+        top: 250px;
+        left: 60px;
+        opacity: 1;
+        border:3px solid #00ffff;
+        border-radius: 15px;
+        }
+        body{
+          margin: 0;
+        }
+        .navbar2{
+         opacity: 0;
+         width: 0px;
+        }
+        .buttonVip:hover{
+          border: 0px;
+          color: white;
+          text-decoration: none;
+        }
+        .buttonVip{
+        padding: 15px 35px 15px 30px;
+        position: relative;
+        width: 50px;
+        top: 100px;
+        left:00px;
+        }
+        .redeSocial{
+        padding: 10px 25px 10px 30px;
+        position: relative;
+        width: 50px;
+        top: 100px;
+        left: 0px;
+        }
+        
+        .img1{
+        width: 90%;
+        height: 230px;
+        position: relative;
+        top: 20px;
+        left: 23px;
+        border-radius: 10%;
+        }
+        .img2{
+        width: 90%;
+        height: 375px;
+        position: relative;
+        top: 175px;
+        left: 20px;
+        border-radius: 6%;
+        }
+        .texto1{
+        font-family: 'Rubik', sans-serif;
+        position: relative;
+        top: 55px;
+        letter-spacing: 0.080rem;
+        text-align: justify;
+        margin-left: 6px;
+        margin-right: 6px;
+        }
+        .texto2{
+        font-family: 'Rubik', sans-serif;
+        position: relative;
+        top: 200px;
+        letter-spacing: 0.080rem;
+        text-align: justify;
+        margin-left: 6px;
+        margin-right: 6px;
+        }
+        .divitexto{
+        width: 100%;
+        position: relative;
+        left: 0px;
+        }
+        .nav-item{
+        display: inline-block;
+        }
+        #logo{
+        position: absolute;
+        top:45px;
+        left: 120px;
+        }
+        #logo3{
+        position: absolute;
+        top:95px;
+        left: 120px;
+        }
+        #logo4{
+        position: absolute;
+        top:145px;
+        left: 120px;
+        }
+        #logo5{
+        position: absolute;
+        top:190px;
+        left: 60px;
+        }
+        #logo7{
+      position: absolute;
+      top:240px;
+      left: 60px;
+}
+        }
+        @media  screen and (max-width: 411px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+    .download{
+      padding: 15px 35px 15px 30px;
+      position: relative;
+      width: 100px;
+      top: 250px;
+      left: 90px;
+      opacity: 1;
+      border:3px solid #00ffff;
+      border-radius: 15px;
+}
+    body{
+      margin: 0;
+}
+    .navbar2{
+      opacity: 0;
+      width: 0px;
+        }
+    .buttonVip:hover{
+      border: 0px;
+      color: white;
+      text-decoration: none;
+}
+    .buttonVip{
+      padding: 25px 35px 25px 30px;
+      position: relative;
+      width: 100px;
+      top: 100px;
+      left: 20px;
+ }
+    .redeSocial{
+      padding: 10px 25px 10px 20px;
+      position: relative;
+      width: 100px;
+      top: 100px;
+      left: 20px;
+}
+        
+    .img1{
+      width: 90%;
+      height: 230px;
+      position: relative;
+      top: 20px;
+      left: 23px;
+      border-radius: 10%;
+}
+    .img2{
+      width: 90%;
+      height: 375px;
+      position: relative;
+      top: 175px;
+      left: 20px;
+      border-radius: 6%;
+}
+    .texto1{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 55px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .texto2{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 200px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .divitexto{
+      width: 100%;
+      position: relative;
+      left: 0px;
+}
+    .nav-item{
+      display: inline-block;
+}
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 120px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 120px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 120px;
+}
+    #logo5{
+      position: absolute;
+      top:190px;
+      left: 80px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 40px;
+}
+}
+
+@media  screen and (max-width: 414px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+    .download{
+      padding: 10px 20px 10px 20px;
+      position: relative;
+      width: 100px;
+      top: 250px;
+      left: 90px;
+      opacity: 1;
+      border:3px solid #00ffff;
+      border-radius: 15px;
+}
+    body{
+      margin: 0;
+}
+    .navbar2{
+      opacity: 0;
+      width: 0px;
+        }
+    .buttonVip:hover{
+      border: 0px;
+      color: white;
+      text-decoration: none;
+}
+    .buttonVip{
+      padding: 15px 30px 15px 20px;
+      position: relative;
+      width: 10px;
+      top: 100px;
+      left: 12px;
+ }
+    .redeSocial{
+      padding: 15px 35px 15px 30px;
+      position: relative;
+      width: 100px;
+      top: 100px;
+      left: 16px;
+}
+        
+    .img1{
+      width: 90%;
+      height: 230px;
+      position: relative;
+      top: 20px;
+      left: 23px;
+      border-radius: 10%;
+}
+    .img2{
+      width: 90%;
+      height: 375px;
+      position: relative;
+      top: 175px;
+      left: 20px;
+      border-radius: 6%;
+}
+    .texto1{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 55px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .texto2{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 200px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .divitexto{
+      width: 100%;
+      position: relative;
+      left: 0px;
+}
+    .nav-item{
+      display: inline-block;
+}
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 120px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 120px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 110px;
+}
+    #logo5{
+      position: absolute;
+      top:190px;
+      left: 80px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 80px;
+}
+}
+@media (max-width: 320px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+    .download{
+      padding: 15px 35px 15px 30px;
+      position: relative;
+      width: 100px;
+      top: 250px;
+      left: 50px;
+      opacity: 1;
+      border:3px solid #00ffff;
+      border-radius: 15px;
+}
+    body{
+      margin: 0;
+}
+    .navbar2{
+      opacity: 0;
+      width: 0px;
+        }
+    .buttonVip:hover{
+      border: 0px;
+      color: white;
+      text-decoration: none;
+}
+    .buttonVip{
+      padding: 10px 25px 10px 20px;
+      position: relative;
+      width: 40px;
+      top: 100px;
+      left: 00px;
+ }
+    .redeSocial{
+      padding: 10px 15px 10px 20px;
+      position: relative;
+      width: 40px;
+      top: 100px;
+      left: 0px;
+      opacity: 1;
+      
+}
+        
+    .img1{
+      width: 90%;
+      height: 180px;
+      position: relative;
+      top: 20px;
+      left: 17px;
+      border-radius: 10%;
+}
+    .img2{
+      width: 90%;
+      height: 375px;
+      position: relative;
+      top: 175px;
+      left: 20px;
+      border-radius: 6%;
+}
+    .texto1{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 55px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .texto2{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 200px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .divitexto{
+      width: 100%;
+      position: relative;
+      left: 0px;
+}
+    .nav-item{
+      display: inline-block;
+}
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 100px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 110px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 110px;
+}
+    #logo5{
+      position: absolute;
+      top:190px;
+      left: 60px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 60px;
+}
+}
+@media  screen and (max-width: 280px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+    .download{
+      padding: 15px 35px 15px 30px;
+      position: relative;
+      width: 100px;
+      top: 250px;
+      left: 30px;
+      opacity: 1;
+      border:3px solid #00ffff;
+      border-radius: 15px;
+}
+    body{
+      margin: 0;
+}
+    .navbar2{
+      opacity: 0;
+      width: 0px;
+        }
+    .buttonVip:hover{
+      border: 0px;
+      color: white;
+      text-decoration: none;
+}
+    .buttonVip{
+      padding: 10px 10px 15px 10px;
+      position: relative;
+      width: 50px;
+      top: 100px;
+      left: 00px;
+ }
+    .redeSocial{
+      padding: 10px 10px 15px 10px;
+      position: relative;
+      top: 100px;
+      left: 5px;
+      opacity: 1;
+      
+}
+        
+    .img1{
+      width: 90%;
+      height: 230px;
+      position: relative;
+      top: 20px;
+      left: 14px;
+      border-radius: 10%;
+}
+    .img2{
+      width: 90%;
+      height: 315px;
+      position: relative;
+      top: 155px;
+      left: 14px;
+      border-radius: 6%;
+}
+    .texto1{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 55px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .texto2{
+      font-family: 'Rubik', sans-serif;
+      position: relative;
+      top: 200px;
+      letter-spacing: 0.080rem;
+      text-align: justify;
+      margin-left: 6px;
+      margin-right: 6px;
+}
+    .divitexto{
+      width: 100%;
+      position: relative;
+      left: 0px;
+}
+    .nav-item{
+      display: inline-block;
+}
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 70px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 70px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 80px;
+}
+#logo5{
+      position: absolute;
+      top:190px;
+      left: 40px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 40px;
+}
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #8B0000">
+    <a class="navbar-brand" href="index.html" id="titulonav">
+      <img src="odin.png" width="30" height="30" class="d-inline-block align-top" alt="" id="logo2">
+        MidGardNetWork
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <img src="home.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo">
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color:white;">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <img src="shop.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo3">
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="loja.html" style="color:white;">Loja</a>
+          </li>
+          <li class="nav-item">
+            <img src="gamepad.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo4">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="ip()"style="color:white;">IP</a>
+          </li>
+          <li class="nav-item">
+            <img src="social.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo5">
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://linktr.ee/redeaqua" target="_blank" style="color:white;">Redes Sociais</a>
+        </li>
+        <img src="servers.svg" width="30" height="30" class="d-inline-block align-top" alt="" id="logo7">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color:white;"href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servidores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">MiniGames</a>
+            <a class="dropdown-item" href="#">RankUp</a>
+            <a class="dropdown-item" href="#">Factions</a>
+          </div>
+        </li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+      <nav class="navbar2">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="loja.html">Loja</a></li>
+          <li><a onclick="ip()" style="color:white;">Ip</a></li>
+          <li><a  onclick="baixar()" href="https://www.dropbox.com/s/cb6jokv59kzrq81/MCPE%200.15.10%20BYWG.apk?dl=0" target="_blank">Download</a></li>
+        </ul>
+        <div class="line"></div>
+      </nav>
+      <img src="fundo.png" class="img1">
+      <div class="divitexto">
+        <p class="texto1">MidGardNetWork, uma nova rede de servidores para minecraft Bedrock Edition, atualmente na versão 15.10, venha se divertir com nossos variados servidores</p>
+      </div>
+        <a href="loja.html" class="buttonVip"><i class="fas fa-coins"></i>&nbspVips</a>
+        <a href="loja.html" class="redeSocial"><i class="fas fa-share-alt-square"></i>&nbspRedes Sociais</a>
+    <script>
+        function ip(){
+            window.confirm("IP: MidGardUp.tk\n25785");
+        }
+        function baixar(){
+            window.confirm("Você será redirecionado a outra pagina para fazer o download do Minecraft PE versão 15.10");
+        }
+        function gmail(){
+          window.confirm("Email para Contato: phsroyale8@gmail.com")
+        }
+    </script>
+    <img src="banner.jpg" class="img2">
+    <div class="divitexto">
+      <p class="texto2">Contamos com apenas um servidor de RankUP, onde temos uma economia OP e uma mecanica unica para lhe supreender, uma mina com uma mineração rapida e sem lag, a cada bloco quebrado voce ganha um valor X Money alem do Drop do item, Variadade de Ranks e varias vantagens para Vips, Youtubers e MiniYoutubers, então venha comprar Seu Vip Ou garantir sua tag Youtuber e desfrute do melhor servidor da Comunidade do Minecraft Bedrock!</p>
+    </div>
+    <a onclick="baixar()" href="https://www.dropbox.com/s/cb6jokv59kzrq81/MCPE%200.15.10%20BYWG.apk?dl=0" target="_blank" class="download">Download MCPE</a>
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+
+          <div class="container pt-4">
+   
+            <section class="mb-4">
+  
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://twitter.com/rede_midgard" target="_blank"
+                role="button"
+                data-mdb-ripple-color="light"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                onclick="gmail()"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </section>
+          </div>
+          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark" target="_blank" href="https://twitter.com/PhsTutorsOfc">MidGardNetwork ( Site By PhsTutors)</a>
+          </div>
+        </footer>
+</body>
+</html>

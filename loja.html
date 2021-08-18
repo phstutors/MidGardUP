@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/304c41c7f8.js" crossorigin="anonymous"></script>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Rubik:wght@400;800&display=swap');
+    a{
+        text-decoration: none;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        }
+        #titulonav{
+          font-family: 'Rubik', sans-serif;
+          color: #fff;
+        }
+        img.logo{
+    border-radius: 50%;
+}
+    .buttonVip{
+        padding: 15px 35px 15px 30px;
+        position: relative;
+        width: 100px;
+        top: 130px;
+        left: 640px;
+        border:3px solid #0000CD;
+        border-radius: 15px;
+}
+#logo7{
+  position: relative;
+  top:7px;
+  margin-left: 3px;
+}
+div.card-deck{
+    position: relative;
+    top: 50px;
+}
+#btn1{
+    position: relative;
+    left: 150px;
+}
+#btn2{
+  position: relative;
+  left: 150px;
+}
+.divitexto{
+    width:900px;
+    position: relative;
+    left: 150px;
+}
+.img1{
+    width: 50%;
+    height: 400px;
+    position: relative;
+    top: 20px;
+    left: 170px;
+    border-radius: 10%;
+}
+.texto1{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 40px;
+    text-align: justify;
+}
+    body{
+        background-color: black;
+        color: black;
+}
+  .buttonVip:hover{
+        border: 0px solid;
+}
+footer{
+  position: relative;
+  top: 120px;
+}
+
+@media  screen and (max-width: 733px) {
+    footer{
+    position: relative;
+    top: 330px;
+    }
+    #btn1{
+      position: relative;
+      left: 120px;
+    }
+    #btn2{
+      position: relative;
+      left: 120px;
+    }
+    body{
+      margin: 0;
+    }
+    .nav-item{
+    display: inline-block;
+    }
+    #logo{
+    position: absolute;
+    top:45px;
+    left: 170px;
+    }
+    #logo3{
+    position: absolute;
+    top:95px;
+    left: 170px;
+    }
+    #logo4{
+    position: absolute;
+    top:145px;
+    left: 170px;
+    }
+    #logo5{
+    position: absolute;
+    top:190px;
+    left: 120px;
+    }
+    #logo7{
+      position: absolute;
+      top:240px;
+      left: 120px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 120px;
+}
+    }
+    
+    @media  screen and (max-width: 360px) {
+        footer{
+        position: relative;
+        top: 330px;
+        }
+        body{
+          margin: 0;
+        }
+        #btn1{
+      position: relative;
+      left: 100px;
+    }
+    #btn2{
+      position: relative;
+      left: 100px;
+    }
+        .nav-item{
+        display: inline-block;
+        }
+        #logo{
+        position: absolute;
+        top:45px;
+        left: 120px;
+        }
+        #logo3{
+        position: absolute;
+        top:95px;
+        left: 120px;
+        }
+        #logo4{
+        position: absolute;
+        top:145px;
+        left: 120px;
+        }
+        #logo5{
+        position: absolute;
+        top:190px;
+        left: 60px;
+        }
+        #logo7{
+      position: absolute;
+      top:240px;
+      left: 60px;
+}
+}
+        @media  screen and (max-width: 411px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+    body{
+      margin: 0;
+}
+#btn1{
+      position: relative;
+      left: 100px;
+    }
+    #btn2{
+      position: relative;
+      left: 100px;
+    }
+.nav-item{
+    display: inline-block;
+    }
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 120px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 120px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 120px;
+}
+    #logo5{
+      position: absolute;
+      top:190px;
+      left: 80px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 40px;
+}
+}
+
+@media  screen and (max-width: 414px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+ body{
+      margin: 0;
+}
+#btn1{
+      position: relative;
+      left: 110px;
+    }
+    #btn2{
+      position: relative;
+      left: 110px;
+    }
+.nav-item{
+    display: inline-block;
+    }
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 120px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 120px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 110px;
+}
+    #logo5{
+      position: absolute;
+      top:190px;
+      left: 80px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 80px;
+}
+}
+@media (max-width: 320px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+    body{
+      margin: 0;
+}
+#btn1{
+      position: relative;
+      left: 85px;
+    }
+    #btn2{
+      position: relative;
+      left: 85px;
+    }
+.nav-item{
+    display: inline-block;
+    }
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 100px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 110px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 110px;
+}
+    #logo5{
+      position: absolute;
+      top:190px;
+      left: 60px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 60px;
+}
+}
+@media  screen and (max-width: 280px) {
+    footer{
+    position: relative;
+    top: 330px;
+}
+    body{
+      margin: 0;
+}
+#btn1{
+      position: relative;
+      left: 65px;
+    }
+    #btn2{
+      position: relative;
+      left: 65px;
+    }
+
+    .nav-item{
+      display: inline-block;
+}
+    #logo{
+      position: absolute;
+      top:45px;
+      left: 70px;
+}
+    #logo3{
+      position: absolute;
+      top:95px;
+      left: 70px;
+}
+    #logo4{
+      position: absolute;
+      top:145px;
+      left: 80px;
+}
+#logo5{
+      position: absolute;
+      top:190px;
+      left: 40px;
+}
+#logo7{
+      position: absolute;
+      top:240px;
+      left: 40px;
+      
+}
+footer{
+  position: relative;
+  top: 120px;
+}
+}
+
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #8B0000;">
+    <a class="navbar-brand" id="titulonav" href="index.html">
+      <img src="odin.png" width="30" height="30" class="d-inline-block align-top" alt="" id="logo2">
+      MidGardNetWork
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <img src="home.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo">
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color:white;">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <img src="shop.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo3">
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="loja.html" style="color:white;">Loja</a>
+          </li>
+          <li class="nav-item">
+            <img src="gamepad.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo4">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="ip()"style="color:white;">IP</a>
+          </li>
+          <li class="nav-item">
+            <img src="social.svg" style="border-radius: 50%;" width="30" height="40" class="d-inline-block align-top" alt="" id="logo5">
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://linktr.ee/redeaqua" target="_blank" style="color:white;">Redes Sociais</a>
+        </li>
+        <img src="servers.svg" width="30" height="30" class="d-inline-block align-top" alt="" id="logo7">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color:white;"href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servidores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">MiniGames</a>
+            <a class="dropdown-item" href="#">RankUp</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="vip1.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center; color: #8B0000;">Vip Hel</h2>
+            <h4 class="card-title" style="text-align: center; color: #8B0000;"><i class="fas fa-coins" style="color:gold;"></i>R$5</h4>
+            <a href="https://mpago.la/2PSjwew" target="_blank" class="btn btn-light" style="background-color: #8B0000; color: white;" role="button" aria-pressed="true" id="btn1"><i class="fas fa-shopping-cart"></i>&nbspComprar</a>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-hand-holding-usd"></i>&nbspMercadoPago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="vip2.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center; color: #8B0000;">Vip Freya</h3>
+            <h4 class="card-title" style="text-align: center; color: #8B0000;"><i class="fas fa-coins" style="color:gold;"></i>R$8</h5>
+            <a href="https://mpago.la/22FfwN2" target="_blank" class="btn btn-light" style="background-color: #8B0000; color: white;" role="button" aria-pressed="true" id="btn1"><i class="fas fa-shopping-cart"></i>&nbspComprar</a>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-hand-holding-usd"></i>&nbspMercadoPago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="vip3.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center; color: #8B0000;">Vip Loki</h5>
+            <h4 class="card-title" style="text-align: center; color: #8B0000;"><i class="fas fa-coins" style="color:gold;"></i>R$10</h4>
+            <a href="#" target="_blank" class="btn btn-light" style="background-color: #8B0000; color: white;" role="button" aria-pressed="true" id="btn2"><i class="fas fa-shopping-cart"></i>&nbspComprar</a>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-hand-holding-usd"></i>&nbspMercadoPago</small></p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="vip4.png" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center; color: #8B0000;">Vip Thor</h2>
+            <h4 class="card-title" style="text-align: center; color: #8B0000;"><i class="fas fa-coins" style="color:gold;"></i>R$15</h4>
+            <a href="https://mpago.la/27rX373" class="btn btn-light" target="_blank" style="background-color: #8B0000; color: white;" role="button" aria-pressed="true" id="btn1"><i class="fas fa-shopping-cart"></i>&nbspComprar</a>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-hand-holding-usd"></i>&nbspMercadoPago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="vip5.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center; color: #8B0000;">Vip Odin</h5>
+            <h4 class="card-title" style="text-align: center; color: #8B0000;"><i class="fas fa-coins" style="color:gold;"></i>R$18</h4>
+            <a href="https://mpago.la/2PsNdmm" target="_blank" class="btn btn-light" style="background-color: #8B0000; color: white;" role="button" aria-pressed="true" id="btn2"><i class="fas fa-shopping-cart"></i>&nbspComprar</a>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-hand-holding-usd"></i>&nbspMercadoPago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="mp.png" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center; color: #8B0000;">Pagamentos Via MP</h5>
+            <h4 class="card-title" style="text-align: center; color: #8B0000;"><i class="fas fa-coins" style="color:gold;"></i>cartao Ou Pix</h4>
+            <a href="https://www.mercadopago.com.br/shield?id=USER_BLOCKER&flow_id=required-actions" target="_blank" class="btn btn-light" style="background-color: #8B0000; color: white;" role="button" aria-pressed="true" id="btn2"><i class="fas fa-shopping-cart"></i>&nbspAcessar MP</a>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-hand-holding-usd"></i>&nbspMercadoPago</small></p>
+          </div>
+        </div>
+      </div>
+    <script>
+        function ip(){
+            window.confirm("IP: RedeAqua.ultrahostbr.xyz\n25556")
+        }
+    </script>
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+
+          <div class="container pt-4">
+   
+            <section class="mb-4">
+  
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://twitter.com/rede_midgard" target="_blank"
+                role="button"
+                data-mdb-ripple-color="light"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                onclick="gmail()"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </section>
+          </div>
+          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark" target="_blank" href="https://twitter.com/PhsTutorsOfc">MidGardNetwork ( Site By PhsTutors)</a>
+          </div>
+        </footer>
+</body>
+</html>
